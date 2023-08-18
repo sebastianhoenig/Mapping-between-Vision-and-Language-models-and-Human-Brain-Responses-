@@ -15,10 +15,10 @@ def main():
 
     dataset = AlgonautsDataset("stimuli/shared_img", device)
     clip_model = ClipModel(device, dataset)
-    #albef_model = ALBEFModel(device, dataset)
+    albef_model = ALBEFModel(device, dataset)
     vilt_model = ViltModel(device, dataset)
     clip_model_r = ClipModel(device, dataset, random=True)
-    #albef_model_r = ALBEFModel(device, dataset, random=True)
+    albef_model_r = ALBEFModel(device, dataset, random=True)
     vilt_model_r = ViltModel(device, dataset, random=True)
     vit_model = VitModel(device, dataset, random=True)
     bert_model = BERTModel(device, dataset, random=True)
